@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <option name="USE_RELEASE_OPTION" value="false" />
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="cloud_Alibaba_provider_9001" />
+        <module name="cloud_consumerfeginOrder_80" />
+        <module name="cloud_stream_consumer_8802" />
+        <module name="cloud_Alibaba_provider_9003" />
+        <module name="cloud_stream_consumer_8803" />
+        <module name="cloud_Alibaba_provider_9002" />
+        <module name="seata_order_service_2001" />
+        <module name="cloud_Alibaba_provider_9004" />
+        <module name="cloud_pay_8001" />
+        <module name="cloud_pay_8002" />
+        <module name="cloud_consul_pay_8006" />
+        <module name="cloud_zookeeper_8004" />
+        <module name="cloud_Alibaba_order_83" />
+        <module name="cloud_Alibaba_consumer_order84" />
+        <module name="cloud_config_client_3366" />
+        <module name="cloud_eurekaserver_7001" />
+        <module name="cloud_stream_provider_8801" />
+        <module name="cloud_eurekaserver_7002" />
+        <module name="cloud_Alibaba_config_3377" />
+        <module name="cloud_api" />
+        <module name="cloud_Hystrix_payment_8001" />
+        <module name="cloud_Alibaba_sentinel_8401" />
+        <module name="cloud_consul_order_80" />
+        <module name="cloud_order_hystrix_80" />
+        <module name="cloud_client_config_3355" />
+        <module name="cloud_order_80" />
+        <module name="cloud_hystrix_dashborad_9001" />
+        <module name="cloud_config_center_3344" />
+        <module name="cloud_gateway_9527" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="8">
+      <module name="cloud_zookeeper_8004" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

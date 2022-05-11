@@ -1,0 +1,32 @@
+server:
+  port: 8803
+spring:
+  application:
+    name: cloud-stream-consumer
+  cloud:
+    stream:
+      binders:
+        defaultRabbit:
+          type: rabbit
+          environment:
+            spring:
+              rabbitmq:
+                host: localhost
+                port: 5672
+                username: guest
+                password: guest
+      bindings:
+        input:
+          destination: studyExchange
+          content-type: application/json #设置消息类型此处为json,文档为text/plain
+          default-binder: defaultRabbit #设置要绑定的消息服务的具体设置
+          group: Simmon2
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7001/eureka
+  instance:
+    lease-renewal-interval-in-seconds: 2 #续约更新时间间隔（默认30秒)
+    lease-expiration-duration-in-seconds: 5 # 续约到期时间（默认90秒）
+    instance-id: send-8803.com #信息列表时显示主机名称
+    prefer-ip-address: true #访问路径变为ip地址
